@@ -55,4 +55,4 @@ Address ./data/config.lua
 
 # About Me
 
-[Mobin Dehghani](https://github.com/MobinDehghani) (حساب تلگرام من(https://telegram.me/MobinDev))
+[Mobin Dehghani](https://github.com/MobinDehghani) ([حساب تلگرام من](https://telegram.me/MobinDev))
