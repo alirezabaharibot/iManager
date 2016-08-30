@@ -1,7 +1,5 @@
 # [TeleSeed](https://telegram.me/TeleSeed)
 
-[![https://gitter.im/SEEDTEAM/TeleSeed](https://badges.gitter.im/SEEDTEAM/TeleSeed.svg)]
-
 **An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU Affero General Public License](https://github.com/SEEDTEAM/TeleSeed/blob/master/LICENSE)**.
 # Features
 
@@ -69,13 +67,6 @@ Create a realm using the `!createrealm` command.
 
 * * *
 
-# Our team!
+# About Me
 
 [Mobin Dehghani](https://github.com/MobinDehghani) ([Telegram](https://telegram.me/MobinDev))
-
-
-### Our Telegram channel:
-
-English: [@AboutBots](https://telegram.me/aboutbots)
-
-Persian: [@AboutBots](https://telegram.me/aboutbots)
