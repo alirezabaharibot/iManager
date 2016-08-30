@@ -33,25 +33,26 @@ chmod +x launch.sh
 
 ### دستورات لازم
 
-بعد از اینکه روبات آنلاین شد به پیوی روبات رفته و واژه "id" را ارسال نمایید
+ را ارسال نمایید "/id" بعد از اینکه روبات آنلاین شد به پیوی روبات رفته و واژه
 
-Open ./data/config.lua and add your ID to the "sudo_users" section in the following format:
+سپس آیدی خودتان را دریافت کنید و ذخیره نمایید
+
+سپس به ادرس زیر در سرور بروید و در قسمت سودو ها ایدی  خود را قرار دهید
+
+Address ./data/config.lua
 ```
   sudo_users = {
     110626080,
     103649648,
     111020322,
     0,
-    YourID
+    محل قرار دادن آیدی شما
   }
 ```
-Then restart the bot.
-
-Create a realm using the `!createrealm` command.
-
+و روبات را ریستارت نمایید
 
 * * *
 
 # About Me
 
-[Mobin Dehghani](https://github.com/MobinDehghani) ([Telegram](https://telegram.me/MobinDev))
+[Mobin Dehghani](https://github.com/MobinDehghani) (حساب تلگرام من(https://telegram.me/MobinDev))
