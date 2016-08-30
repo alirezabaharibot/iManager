@@ -1,6 +1,4 @@
-# [TeleSeed](https://telegram.me/TeleSeed)
-
-**An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU Affero General Public License](https://github.com/SEEDTEAM/TeleSeed/blob/master/LICENSE)**.
+# [My Bot](https://telegram.me/MobinDev)
 # Features
 
 * **A powerful antispam system with custom sensitivity for each group**
