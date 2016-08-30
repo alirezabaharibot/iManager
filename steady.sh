@@ -96,7 +96,7 @@ cat << EOF
  
 EOF
 echo -e "                \e[100m                Steady script           \e[00;37;40m"
-echo -e "               \e[01;34m                    by alireza_PT       \e[00;37;40m"
+echo -e "               \e[01;34m                    by @MobinDev        \e[00;37;40m"
 echo ""
 cat << EOF
  $bld$f1▄ ▀▄   ▄▀ ▄   $f2 ▄▄▄████▄▄▄    $f3  ▄██▄     $f4▄ ▀▄   ▄▀ ▄   $f5 ▄▄▄████▄▄▄    $f6  ▄██▄  $rst
@@ -109,7 +109,7 @@ EOF
 sleep 1.2
 
 # Checking if the bot folder is in HOME
-echo -e "$bld$f4 CHECKING INSTALLED BOT...$rst"
+echo -e "$bld$f4 درحال چک کردن...$rst"
 sleep 0.5
 ls ../ | grep $BOT > /dev/null
 if [ $? != 0 ]; then
@@ -117,7 +117,7 @@ if [ $? != 0 ]; then
   sleep 4
   exit 1
 fi
-echo -e "$f2 $BOT FOUND IN YOUR HOME DIRECTORY$rst"
+echo -e "$f2 $BOT در سرور شما یافت نشد$rst"
 sleep 0.5
 
 
@@ -129,12 +129,12 @@ echo -e "\033[38;5;208m @MobinDev    :)      @MobinDev \033[0;00m"
 echo -e "\033[38;5;208m @MobinDev    :)      @MobinDev \033[0;00m"
 
 sleep 1.5
-echo -e "$bld$f4 CHECKING PROCESSES...$rst"
+echo -e "$bld$f4 درحال انجام...$rst"
 sleep 0.7
 
 # Looks for the number of screen/telegram-cli processes
 CLINUM=`ps -e | grep -c telegram-cli`
-echo "$f2 RUNNING $CLINUM TELEGRAM-CLI PROCESS$rst"
+echo "$f2 درحال اجرا $CLINUM اکانت سی ال آی$rst"
 sleep 0.9
 
 # =====Setup ends===== #
@@ -187,11 +187,11 @@ while true; do
 	NONVOLUNTARYCHECK=`grep nonvoluntary CHECK | cut -f 2 -d":" | sed 's/^[[:space:]]*//'`
 	
 	if [ $NONVOLUNTARY != $NONVOLUNTARYCHECK ] || [ $VOLUNTARY != $VOLUNTARYCHECK ]; then
-		echo -e "$f5 BOT RUNNING!$rst"
+		echo -e "$f5 روبات درحال اجرا است$rst"
 		OK=$(( $OK + 1 ))
 
 	else
-		echo -e "$f5 BOT NOT RUNING, TRYING TO RELOAD IT...$rst"
+		echo -e "$f5 روبات اجرا نشد...$rst"
 		BAD=$(( $BAD + 1 ))
 		sleep 1
 		
@@ -248,7 +248,7 @@ cat << EOF
  
 EOF
 echo -e "                \e[100m                Steady script           \e[00;37;40m"
-echo -e "               \e[01;34m                    by @MobinDev       \e[00;37;40m"
+echo -e "               \e[01;34m                    by @MobinDev        \e[00;37;40m"
 echo ""
 cat << EOF
  $bld$f1▄ ▀▄   ▄▀ ▄   $f2 ▄▄▄████▄▄▄    $f3  ▄██▄     $f4▄ ▀▄   ▄▀ ▄   $f5 ▄▄▄████▄▄▄    $f6  ▄██▄  $rst
@@ -261,7 +261,7 @@ EOF
 sleep 1.3
 
 # Checking if the bot folder is in HOME
-echo -e "$bld$f4 CHECKING INSTALLED BOT...$rst"
+echo -e "$bld$f4 درحال بررسی روبات...$rst"
 sleep 0.5
 ls ../ | grep $BOT > /dev/null
 if [ $? != 0 ]; then
@@ -274,14 +274,14 @@ sleep 0.5
 
 
 echo ""
-echo -e "\033[38;5;208m @alireza_PT    :)      @Create_antispam_bot \033[0;00m"
-echo -e "\033[38;5;208m @alireza_PT    :)      @Create_antispam_bot \033[0;00m"
-echo -e "\033[38;5;208m @alireza_PT    :)      @Create_antispam_bot \033[0;00m"
-echo -e "\033[38;5;208m @alireza_PT    :)      @Create_antispam_bot \033[0;00m"
-echo -e "\033[38;5;208m @alireza_PT    :)      @Create_antispam_bot \033[0;00m"
+echo -e "\033[38;5;208m @MobinDev    :)      @MobinDev \033[0;00m"
+echo -e "\033[38;5;208m @MobinDev    :)      @MobinDev \033[0;00m"
+echo -e "\033[38;5;208m @MobinDev    :)      @MobinDev \033[0;00m"
+echo -e "\033[38;5;208m @MobinDev    :)      @MobinDev \033[0;00m"
+echo -e "\033[38;5;208m @MobinDev    :)      @MobinDev \033[0;00m"
 # Starting preliminar setup
 sleep 1.5
-echo -e "$bld$f4 CHECKING PROCESSES...$rst"
+echo -e "$bld$f4 درحال انجام...$rst"
 sleep 0.7
 
 # Looks for the number of screen/telegram-cli processes
