@@ -319,11 +319,11 @@ local function lock_group_username(msg, data, target)
   end
   local group_username_lock = data[tostring(target)]['settings']['username']
   if group_username_lock == 'yes' then
-    return '🔐 قفل کاربری فعال است'
+    return '🔐 ارسال آیدی قفل بوده'
   else
     data[tostring(target)]['settings']['username'] = 'yes'
     save_data(_config.moderation.data, data)
-    return '🔐 قفل کاربر فعال شد'
+    return '🔐 ارسال آیدی قفل شد'
   end
 end
 
