@@ -588,11 +588,11 @@ local function lock_group_arabic(msg, data, target)
   end
   local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
   if group_arabic_lock == 'yes' then
-    return 'Arabic is already locked'
+    return '🔐 چت فارسی قفل بوده است'
   else
     data[tostring(target)]['settings']['lock_arabic'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'Arabic has been locked'
+    return '🔐 چت فارسی قفل شد'
   end
 end
 
@@ -602,11 +602,11 @@ local function unlock_group_arabic(msg, data, target)
   end
   local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
   if group_arabic_lock == 'no' then
-    return 'Arabic/Persian is already unlocked'
+    return '🔓 چت فارسی از قبل باز بوده'
   else
     data[tostring(target)]['settings']['lock_arabic'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Arabic/Persian has been unlocked'
+    return '🔓 چت فارسی آزاد شد'
   end
 end
 
@@ -617,12 +617,12 @@ local function lock_group_membermod(msg, data, target)
   end
   local group_member_lock = data[tostring(target)]['settings']['lock_member']
   if group_member_lock == 'yes' then
-    return 'SuperGroup members are already locked'
+    return '🔐 قفل اعضا فعال است'
   else
     data[tostring(target)]['settings']['lock_member'] = 'yes'
     save_data(_config.moderation.data, data)
   end
-  return 'SuperGroup members has been locked'
+  return '🔐 قفل اعضا فعال شد'
 end
 
 local function unlock_group_membermod(msg, data, target)
@@ -631,11 +631,11 @@ local function unlock_group_membermod(msg, data, target)
   end
   local group_member_lock = data[tostring(target)]['settings']['lock_member']
   if group_member_lock == 'no' then
-    return 'SuperGroup members are not locked'
+    return '🔓 قفل اعضا فعال نیست'
   else
     data[tostring(target)]['settings']['lock_member'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'SuperGroup members has been unlocked'
+    return '🔓 قفل اعضای باز شد'
   end
 end
 
@@ -645,11 +645,11 @@ local function lock_group_rtl(msg, data, target)
   end
   local group_rtl_lock = data[tostring(target)]['settings']['lock_rtl']
   if group_rtl_lock == 'yes' then
-    return 'RTl is already locked'
+    return '🔐 قفل آر تی ال فعال بوده است'
   else
     data[tostring(target)]['settings']['lock_rtl'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'RTL has been locked'
+    return '🔐 قفل آر تی ال فعال شد'
   end
 end
 
@@ -659,11 +659,11 @@ local function unlock_group_rtl(msg, data, target)
   end
   local group_rtl_lock = data[tostring(target)]['settings']['lock_rtl']
   if group_rtl_lock == 'no' then
-    return 'RTL is already unlocked'
+    return '🔓 آر تی ال از قبل غیر فعال بوده'
   else
     data[tostring(target)]['settings']['lock_rtl'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'RTL has been unlocked'
+    return '🔓 قفل آر تی ال باز شد'
   end
 end
 
@@ -673,11 +673,11 @@ local function lock_group_tgservice(msg, data, target)
   end
   local group_tgservice_lock = data[tostring(target)]['settings']['lock_tgservice']
   if group_tgservice_lock == 'yes' then
-    return 'Tgservice is already locked'
+    return '🔐 سختگیری قفل بوده است'
   else
     data[tostring(target)]['settings']['lock_tgservice'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'Tgservice has been locked'
+    return '🔐 سخت گیری قفل شد'
   end
 end
 
@@ -687,11 +687,11 @@ local function unlock_group_tgservice(msg, data, target)
   end
   local group_tgservice_lock = data[tostring(target)]['settings']['lock_tgservice']
   if group_tgservice_lock == 'no' then
-    return 'TgService Is Not Locked!'
+    return '🔓 قفل سخت گیری باز بوده است'
   else
     data[tostring(target)]['settings']['lock_tgservice'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'Tgservice has been unlocked'
+    return '🔓 قفل سخت گیری باز شد'
   end
 end
 
