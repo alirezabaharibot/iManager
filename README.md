@@ -13,7 +13,6 @@
 #Nasb Bot
 
 ```sh
-# میریم برای نصب روبات
 cd $HOME
 git clone https://github.com/MobinDehghani/iManager
 cd iManager
@@ -22,20 +21,18 @@ chmod +x launch.sh
 ./launch.sh # شماره را وارد کنید و وارد اکانت شوید
 ```
 
-#Nokate lazem
+#Enable Kardan Auto launch
 
-bade inke bot online shod be Pv robot berid Va matn "/id" ro be robot ersal konid
+Bad Az launch kardan Mirim Soragh Auto launch
+tebgh dastorat zir Auto launch ro Enable Konid
 
-your id ro copy konid va dar address ./data/config.lua ghesmat soud ha ID adadi khodeton ro bezard
-
-tebgh halate zir
+[Faghat Roye Server Eshteraki Amal Kkhahad Kard]
 
 ```
-  sudo_users = {
-    160149610,
-    0,
-    محل قرار دادن آیدی شما
-  }
+killall screen
+killall tmux
+killall telegram-cli
+tmux new-session -s script "bash steady.sh -t"
 ```
 و روبات را ریستارت نمایید
 
