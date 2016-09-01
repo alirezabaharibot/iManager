@@ -22,20 +22,17 @@ chmod +x launch.sh
 ./launch.sh # شماره را وارد کنید و وارد اکانت شوید
 ```
 
-### دستورات لازم
+#Nokate lazem
 
- را ارسال نمایید "/id" بعد از اینکه روبات آنلاین شد به پیوی روبات رفته و واژه
+bade inke bot online shod be Pv robot berid Va matn "/id" ro be robot ersal konid
 
-سپس آیدی خودتان را دریافت کنید و ذخیره نمایید
+your id ro copy konid va dar address ./data/config.lua ghesmat soud ha ID adadi khodeton ro bezard
 
-سپس به ادرس زیر در سرور بروید و در قسمت سودو ها ایدی  خود را قرار دهید
+tebgh halate zir
 
-Address ./data/config.lua
 ```
   sudo_users = {
-    110626080,
-    103649648,
-    111020322,
+    160149610,
     0,
     محل قرار دادن آیدی شما
   }
@@ -44,6 +41,6 @@ Address ./data/config.lua
 
 * * *
 
-# About Me
+# Barbare Mobin Dehghani
 
-[Mobin Dehghani](https://github.com/MobinDehghani) ([حساب تلگرام من](https://telegram.me/MobinDev))
+[Mobin Dehghani](https://github.com/MobinDehghani) ([My Account](https://telegram.me/MobinDev))
