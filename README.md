@@ -1,24 +1,16 @@
 # [iManager](https://telegram.me/iManager)
 
-* **A powerful antispam system with custom sensitivity for each group**
-* **Multiple realms (admin groups)**
-* **Recalcitrant to any kind of spamming (X/Y bots, name/photo changers, etc.)**
-* **Global banning**
-* **Broadcast to all groups**
-* **Group and  links**
-* **Kick, ban and unban by reply**
-* **Groups, ban and global ban list**
-* **Logging anything that happens in a group**
-* **Invitation by username**
-* **Group administration via private messages**
-* **Only mods, owner and admin can add bots in groups**
-* **Arabic lock**
-* **Lock TgService**
-* **Chat list**
-* **And more!**
+* **Yek Source Kamel va Binaghs**
+* **Daraye Auto launch va Anti Crash**
+* **Kamelan Rayegan va Bedone Hazine
+* Daraye lock haye Motefavet**
+* **Javab Haye Farsi**
+* **Plugin Haye Zarory**
+* **Ghofl Arabi Farsi English Photo**
+* **Va...**
 
 
-#نصب روبات
+#Nasb Bot
 
 ```sh
 # میریم برای نصب روبات
