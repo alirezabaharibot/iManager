@@ -21,12 +21,12 @@ chmod +x launch.sh
 ./launch.sh # شماره را وارد کنید و وارد اکانت شوید
 ```
 
+[Amozesh Sudo Kardan Khodetan](https://telegram.me/create_antispam_bot)
+
 #Enable Kardan Auto launch
 
 Bad Az launch kardan Mirim Soragh Auto launch
 tebgh dastorat zir Auto launch ro Enable Konid
-
-[Faghat Roye Server Eshteraki Amal Kkhahad Kard]
 
 ```
 killall screen
@@ -34,10 +34,10 @@ killall tmux
 killall telegram-cli
 tmux new-session -s script "bash steady.sh -t"
 ```
-و روبات را ریستارت نمایید
+Aknon Az Robot Lezzat Bebarid
 
 * * *
 
-# Barbare Mobin Dehghani
+# Darbare Mobin Dehghani
 
-[Mobin Dehghani](https://github.com/MobinDehghani) ([My Account](https://telegram.me/MobinDev))
+[Mobin Dehghani](https://github.com/MobinDehghani) [[My Account](https://telegram.me/MobinDev)]
