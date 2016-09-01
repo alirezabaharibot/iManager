@@ -6,7 +6,7 @@ local function set_bot_photo(msg, success, result)
     os.rename(result, file)
     print('File moved to:', file)
     set_profile_photo(file, ok_cb, false)
-    send_large_msg(receiver, 'Photo changed!', ok_cb, false)
+    send_large_msg(receiver, '🖼 تصویر تنظیم شد', ok_cb, false)
     redis:del("bot:photo")
   else
     print('Error downloading: '..msg.id)
@@ -167,7 +167,7 @@ local function run(msg,matches)
     end
     if matches[1] == "setbotphoto" then
     	redis:set("bot:photo", "waiting")
-    	return 'Please send me bot photo now'
+    	return '🖼 عکس جدید روبات را ارسال کنید'
     end
     if matches[1] == "markread" then
     	if matches[2] == "on" then
