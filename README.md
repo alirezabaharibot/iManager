@@ -1,5 +1,4 @@
-# [My Bot](https://telegram.me/MobinDev)
-# Features
+# [iManager](https://telegram.me/iManager)
 
 * **A powerful antispam system with custom sensitivity for each group**
 * **Multiple realms (admin groups)**
@@ -24,8 +23,8 @@
 ```sh
 # میریم برای نصب روبات
 cd $HOME
-git clone https://github.com/MobinDehghani/TeleSeed-Perfect.git -b supergroups
-cd TeleSeed
+git clone https://github.com/MobinDehghani/iManager
+cd iManager
 chmod +x launch.sh
 ./launch.sh install
 ./launch.sh # شماره را وارد کنید و وارد اکانت شوید
