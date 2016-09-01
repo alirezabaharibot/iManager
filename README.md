@@ -2,8 +2,8 @@
 
 * **Yek Source Kamel va Binaghs**
 * **Daraye Auto launch va Anti Crash**
-* **Kamelan Rayegan va Bedone Hazine
-* Daraye lock haye Motefavet**
+* **Kamelan Rayegan va Bedone Hazine**
+* **Daraye lock haye Motefavet**
 * **Javab Haye Farsi**
 * **Plugin Haye Zarory**
 * **Ghofl Arabi Farsi English Photo**
