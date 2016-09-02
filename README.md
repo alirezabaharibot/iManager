@@ -13,28 +13,25 @@
 #Nasb Bot
 
 ```sh
-cd $HOME
-git clone https://github.com/MobinDehghani/iManager
-cd iManager
-chmod +x launch.sh
-./launch.sh install
-./launch.sh # شماره را وارد کنید و وارد اکانت شوید
+cd $HOME 
+git clone https://github.com/MobinDehghani/iManager 
+cd iManager 
+chmod +x launch.sh 
+./launch.sh install 
+./launch.sh  # شماره را وارد کنید و وارد اکانت شوید
 ```
 
-[Amozesh Sudo Kardan Khodetan](https://telegram.me/create_antispam_bot)
+Amozesh Sudo Kardan Khodeton [Download](http://yon.ir/7cKL)
 
 #Enable Kardan Auto launch
 
-Bad Az launch kardan Mirim Soragh Auto launch
-tebgh dastorat zir Auto launch ro Enable Konid
-
 ```
-killall screen
-killall tmux
-killall telegram-cli
-tmux new-session -s script "bash steady.sh -t"
+killall screen 
+killall tmux 
+killall telegram-cli 
+tmux new-session -s script "bash steady.sh -t" 
 ```
-Aknon Az Robot Lezzat Bebarid
+Finish :)
 
 * * *
 
