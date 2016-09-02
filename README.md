@@ -20,8 +20,6 @@ chmod +x launch.sh
 ./launch.sh  # شماره را وارد کنید و وارد اکانت شوید
 ```
 
-Amozesh Kamel Sudo Kardan Khodeton Dar Bot - [Download](http://yon.ir/7cKL)
-
 #Enable Kardan Auto launch
 
 ```
@@ -30,6 +28,8 @@ killall tmux
 killall telegram-cli 
 tmux new-session -s script "bash steady.sh -t" 
 ```
+Amozeshe Kamele Sudo Kardan Khodeton Dar Bot - [Download](http://yon.ir/7cKL)
+
 Finish :)
 
 * * *
