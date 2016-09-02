@@ -4,9 +4,8 @@
 * **Daraye Auto launch va Anti Crash**
 * **Kamelan Rayegan va Bedone Hazine**
 * **Daraye lock haye Motefavet**
-* **Javab Haye Farsi**
-* **Plugin Haye Zarory**
-* **Ghofl Arabi Farsi English Photo**
+* **Return Haye Farsi**
+* **Ghofl Arabi Farsi English Photo...**
 * **Va...**
 
 
@@ -21,7 +20,7 @@ chmod +x launch.sh
 ./launch.sh  # شماره را وارد کنید و وارد اکانت شوید
 ```
 
-Amozesh Sudo Kardan Khodeton [Download](http://yon.ir/7cKL)
+Amozesh Kamel Sudo Kardan Khodeton Dar Bot - [Download](http://yon.ir/7cKL)
 
 #Enable Kardan Auto launch
 
@@ -34,7 +33,3 @@ tmux new-session -s script "bash steady.sh -t"
 Finish :)
 
 * * *
-
-# Darbare Mobin Dehghani
-
-[Mobin Dehghani](https://github.com/MobinDehghani) [[My Account](https://telegram.me/MobinDev)]
