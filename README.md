@@ -1,7 +1,7 @@
 # [iManager](https://telegram.me/iManager)
 
 
-Nasb Bot
+* **Nasb Bot**
 
 ```sh
 cd $HOME 
@@ -12,7 +12,7 @@ chmod +x launch.sh
 ./launch.sh  # شماره را وارد کنید و وارد اکانت شوید
 ```
 
-Enable Kardan Auto launch
+* **Enable Kardan Auto launch**
 
 ```
 killall screen 
@@ -24,4 +24,4 @@ tmux new-session -s script "bash steady.sh -t"
 Finish :)
 
 * * *
-* **By [Mobin Dehghani](https://telegram.me/mobindev)**
+**By [Mobin Dehghani](https://telegram.me/mobindev)**
