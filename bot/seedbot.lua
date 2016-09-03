@@ -230,6 +230,14 @@ function create_config( )
     "rmsg",
     "lock_fosh",
     "lock_username",
+    "lock_tag",
+    "lock_fwd",
+    "lock_reply",
+    "lock_operator",
+    "lock_media",
+    "lock_english",
+    "lock_emoji",
+    "lock_join",
     "leave_ban",
 	"supergroup",
 	"whitelist",
@@ -238,9 +246,23 @@ function create_config( )
     sudo_users = {160149610,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[
-    
-    About Your Bot
-    
+    ℹ️ آی منیجر
+
+Github.com/MobinDehghani/iManager
+
+1⃣ اوپن سورس
+2⃣ کاملا فارسی و مفهوم
+3⃣ پرسرعت و بدون خاموشی
+4⃣ قفل های متفاوت و جدید
+5⃣ آپدیت هفتگی و ماهانه
+و...
+
+👤 توسعه دهندگان :
+
+@MobinDev - توسعه دهنده و مدیر
+@Sudo1 - مدیر و پلاگین نویس
+
+🙏 ارادمتند ، مدیریت آی منیجر
 ]],
     help_text_realm = [[
 
