@@ -247,6 +247,8 @@ function create_config( )
     "getplug",
     "share",
     "feedback",
+    "qr",
+    "google",
 	"supergroup",
 	"whitelist",
 	"msg_checks"
@@ -379,8 +381,14 @@ Github.com/MobinDehghani/iManager
 🖍 زیبا نویسی متن :
 !tex [متن]
 
+🔍 جستجو در گوگل :
+!google [متن]
+
 🚏 ارسال پیام به پشتیبانی :
 !feedback [متن]
+
+🔲 ساخت کیو آر کد :
+!qr [متن]
 
 📣 نمایش اطلاعات :
 !res @MobinDev
