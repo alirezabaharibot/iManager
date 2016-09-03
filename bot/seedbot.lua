@@ -250,6 +250,7 @@ function create_config( )
     "qr",
     "google",
     "shortlink",
+    "dellall",
 	"supergroup",
 	"whitelist",
 	"msg_checks"
