@@ -26,6 +26,7 @@ return {
   "rightel",
   "همراه اول",
   "رایتل",
+  "talia",
   "تالیا",
   },
   run = run
