@@ -241,6 +241,12 @@ function create_config( )
     "leave_ban",
     "plugins",
     "echo",
+    "tex",
+    "salam",
+    "fohsh",
+    "getplug",
+    "share",
+    "feedback",
 	"supergroup",
 	"whitelist",
 	"msg_checks"
@@ -366,6 +372,15 @@ Github.com/MobinDehghani/iManager
 
 🗣 تکرار متن شما :
 !echo [متن]
+
+📱شماره روبات :
+!share
+
+🖍 زیبا نویسی متن :
+!tex [متن]
+
+🚏 ارسال پیام به پشتیبانی :
+!feedback [متن]
 
 📣 نمایش اطلاعات :
 !res @MobinDev
