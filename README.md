@@ -1,15 +1,11 @@
 # [iManager](https://telegram.me/iManager)
 
 * **Yek Source Kamel va Binaghs**
-* **Daraye Auto launch va Anti Crash**
-* **Kamelan Rayegan va Bedone Hazine**
-* **Daraye lock haye Motefavet**
-* **Return Haye Farsi**
-* **Ghofl Arabi Farsi English Photo...**
-* **Va...**
+* **By [Mobin Dehghani](https://telegram.me/mobindev)**
 
 
-#Nasb Bot
+
+Nasb Bot
 
 ```sh
 cd $HOME 
@@ -20,7 +16,7 @@ chmod +x launch.sh
 ./launch.sh  # شماره را وارد کنید و وارد اکانت شوید
 ```
 
-#Enable Kardan Auto launch
+Enable Kardan Auto launch
 
 ```
 killall screen 
