@@ -249,6 +249,7 @@ function create_config( )
     "feedback",
     "qr",
     "google",
+    "shortlink",
 	"supergroup",
 	"whitelist",
 	"msg_checks"
@@ -383,6 +384,9 @@ Github.com/MobinDehghani/iManager
 
 🔍 جستجو در گوگل :
 !google [متن]
+
+📎 کوتاه کردن لینک :
+!shortlink [لینک]
 
 🚏 ارسال پیام به پشتیبانی :
 !feedback [متن]
