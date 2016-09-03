@@ -240,6 +240,7 @@ function create_config( )
     "lock_join",
     "leave_ban",
     "plugins",
+    "echo",
 	"supergroup",
 	"whitelist",
 	"msg_checks"
@@ -271,133 +272,114 @@ Github.com/MobinDehghani/iManager
 
 ]],
     help_text = [[
-Commands list :
+📃 دستورات مدیریتی روبات
 
-!kick [username|id]
-You can also do it by reply
+🏳 اخراج از گروه (ریپلی) :
+!kick @MobinDev
 
-!ban [ username|id]
-You can also do it by reply
+🏴 انسداد از ورود به گروه :
+!ban @MobinDev
 
-!unban [id]
-You can also do it by reply
+🚩 رفع انسداد ورود :
+!unban @MobinDev
 
-!who
-Members list
+🤔 اطلاعات اکانت :
+!who [ آیدی عددی ]
 
+👥 نمایش مدیران گروه :
 !modlist
-Moderators list
 
-!promote [username]
-Promote someone
+🔺 ارتقاع مقام :
+/promote @MobinDev
 
-!demote [username]
-Demote someone
+🔻 انزال مقام :
+/demote @MobinDev
 
-!kickme
-Will kick user
-
+📜 نمایش توضیحات گروه :
 !about
-Group description
 
+📜 تنظیم توضیحات گروه :
+!setabout [ متن توضیحات  ]
+
+🖼 تنظیم عکس گروه :
 !setphoto
-Set and locks group photo
 
-!setname [name]
-Set group name
+🗒تنظیم نام گروه :
+!setname [ نام ]
 
+📖 مشاهد قوانین گروه :
 !rules
-Group rules
 
+📖 تنظیم قوانین گروه :
+!setrules [ متن قوانین ]
+
+📋 نمایش اطلاعات شما ؛
 !id
-return group id or user id
 
+📝 نمایش راهنما (همین متن) :
 !help
-Returns help text
 
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Kick user if Right To Left Char. is in name*
-
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Kick user if Right To Left Char. is in name*
-
-!mute [all|audio|gifs|photo|video]
-mute group message types
-*If "muted" message type: user is kicked if message type is posted 
-
-!unmute [all|audio|gifs|photo|video]
-Unmute group message types
-*If "unmuted" message type: user is not kicked if message type is posted 
-
-!set rules <text>
-Set <text> as rules
-
-!set about <text>
-Set <text> as about
-
+⚙ نمایش تنظیمات :
 !settings
-Returns group settings
 
-!muteslist
-Returns mutes for chat
+🔇 بیصدا کردن :
+!mute - all - audio - gifs...
 
-!muteuser [username]
-Mute a user in chat
-*user is kicked if they talk
-*only owners can mute | mods and owners can unmute
+🔊 صدا دار کردن :
+!unmute - all - audio - gifs...
 
+📢 نمایش لیست بیصدا ها :
 !mutelist
-Returns list of muted users in chat
 
+🔕 بیصدا کردن یک فرد :
+!muteuser @MobinDev
+
+🔔 صدا دار کردن فرد - دوباره :
+!muteuser @MobinDev
+
+📎 ساخت لینک جدید :
 !newlink
-create/revoke your group link
 
+📎 نمایش لینک گروه :
 !link
-returns group link
 
+📍آونر کردن (ریپلای) :
+!setowner
+
+📍نمایش آونر های گروه :
 !owner
-returns group owner id
 
-!setowner [id]
-Will set id as owner
+🎛 تنظیم حساسیت :
+ !setflood [عدد]
 
-!setflood [value]
-Set [value] as flood sensitivity
+💾 ذخیره متن :
+!save [متن] [نام]
 
-!stats
-Simple message statistics
+📄 نمایش متن ذخیره :
+!get [نام]
 
-!save [value] <text>
-Save <text> as [value]
+🔃پاکسازی :
+!clean - rules - modlist
 
-!get [value]
-Returns text of [value]
+⚡️ پاک کردن پیام ها :
+!rmsg [عدد]
 
-!clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
+🗣 تکرار متن شما :
+!echo [متن]
 
-!res [username]
-returns user id
-"!res @username"
+📣 نمایش اطلاعات :
+!res @MobinDev
 
-!log
-Returns group logs
-
+📚 لیست افراد مسدود :
 !banlist
-will return group ban list
 
-**You can use "#", "!", or "/" to begin all commands
+___________________________
 
+⚠️ میتوانید از # و / استفاده کنید
+⚠️ تنها آنور ها میتوانند روبات اد کنند
+⚠️ تنها مدیران میتوانند مسدود کنند
 
-*Only owner and mods can add bots in group
-
-
-*Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-*Only owner can use res,setowner,promote,demote and log commands
-
+___________________________
 ]],
 	help_text_super =[[
 SuperGroup Commands:
