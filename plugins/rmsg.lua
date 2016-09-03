@@ -5,21 +5,21 @@ local function history(extra, suc, result)
   if tonumber(extra.con) == #result then
     send_msg(extra.chatid, '"'..#result..'" پیام اخیر سوپر گروه حذف شد', ok_cb, false)
   else
-    send_msg(extra.chatid, 'ℹ️تعداد پیام مورد نظر شما پاک شد', ok_cb, false)
+    send_msg(extra.chatid, 'ℹ️ تعداد پیام های مورد نظر شما پاک شدند', ok_cb, false)
   end
 end
 local function run(msg, matches)
   if matches[1] == 'rmsg' and is_owner(msg) then
     if msg.to.type == 'channel' then
       if tonumber(matches[2]) > 10000 or tonumber(matches[2]) < 1 then
-        return "تعداد بیشتر از 1 مجاز است"
+        return "ℹ️ تعداد بیشتر از 1 مجاز است"
       end
       get_history(msg.to.peer_id, matches[2] + 1 , history , {chatid = msg.to.peer_id, con = matches[2]})
     else
-      return "ℹ️فقط در سوپرگروه ممکن است"
+      return "👥 فقط در سوپرگروه امکان دارد"
     end
   else
-    return "ℹ️شما دسترسی ندارید"
+    return "⚠️ شما درسترسی نداریدد"
   end
 end
 
