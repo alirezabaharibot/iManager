@@ -117,7 +117,7 @@ if [ $? != 0 ]; then
   sleep 4
   exit 1
 fi
-echo -e "$f2 $BOT در سرور شما یافت نشد$rst"
+echo -e "$f2 $BOT در حال اتصال به$rst"
 sleep 0.5
 
 
@@ -148,7 +148,7 @@ TMUX= tmux new-session -d -s $BOT "./launch.sh"
 sleep 1.3
 
 CLIPID=`ps -e | grep telegram-cli | head -1 | sed 's/^[[:space:]]*//' | cut -f 1 -d" "`
-echo -e "$f2 NEW TELEGRAM-CLI PROCESS: $CLIPID$rst"
+echo -e "$f2 اتولانچ کردن اکانت : $CLIPID$rst"
 echo ""
 echo ""
 
@@ -269,7 +269,7 @@ if [ $? != 0 ]; then
   sleep 4
   exit 1
 fi
-echo -e "$f2 $BOT FOUND IN YOUR HOME DIRECTORY$rst"
+echo -e "$f2 $BOT موجود است در فایل های شما$rst"
 sleep 0.5
 
 
@@ -302,8 +302,8 @@ if [ $SCREENNUM -ge 3 ]; then
 fi
 echo "$f2 SCREEN NUMBER AND CLI NUMBER UNDER THE SUPPORTED LIMIT"
 sleep 0.7
-echo "$f2 RUNNING $SCREENNUM SCREEN PROCESS$rst"
-echo "$f2 RUNNING $CLINUM TELEGRAM-CLI PROCESS$rst"
+echo "$f2 درحال اجرا $SCREENNUM صفحه فعال$rst"
+echo "$f2 درحال اجرا $CLINUM اکانت تلگرام$rst"
 sleep 0.9
 
 # Getting screen pid's
@@ -345,7 +345,7 @@ sleep 1
 # =====Setup ends===== #
 
 # Opening new screen in a daemon
-echo -e "$bld$f4 ATTACHING SCREEN AS DAEMON...$rst"
+echo -e "$bld$f4 روبات در حال اجرا قرار دارد$rst"
 # Better to clear cli status before
 rm ../.telegram-cli/state  > /dev/null 
 screen -d -m bash launch.sh
@@ -396,8 +396,8 @@ sleep 5
 
   while true; do
   
-	echo -e "$f2 TIMES CHECKED AND RUNNING:$f5 $OK $rst"
-	echo -e "$f2 TIMES FAILED AND RECOVERED:$f5 $BAD $rst"
+	echo -e "$f2 دفعات لانچ روبات :$f5 $OK $rst"
+	echo -e "$f2 لانچ های شکست خورده :$f5 $BAD $rst"
 	echo ""
 	
 	cat /proc/$CLIPID/task/$CLIPID/status > CHECK
@@ -407,11 +407,11 @@ sleep 5
 	#echo -e "NONVOLUNTARY CTXT SWITCHES: $NONVOLUNTARY"
 	
 	if [ $NONVOLUNTARY != $NONVOLUNTARYCHECK ] || [ $VOLUNTARY != $VOLUNTARYCHECK ]; then
-		echo -e "$f5 BOT RUNNING!$rst"
+		echo -e "$f5 روبات در حال اجرا است$rst"
 		OK=$(( $OK + 1 ))
 
 	else
-		echo -e "$f5 BOT NOT RUNING, TRYING TO RELOAD IT...$rst"
+		echo -e "$f5 روبات درحال اجرا است$rst"
 		BAD=$(( $BAD + 1 ))
 		sleep 1
 		
@@ -460,7 +460,7 @@ clear
 TMUX= tmux new-session -d -s script_detach "bash steady.sh -t"
 echo -e "\e[1m"
 echo -e ""
-echo "Bot running in the backgroud with TMUX"
+echo "روبات درحال اجرا با تی ماکس"
 echo ""
 echo -e "\e[0m"
 sleep 3
@@ -501,7 +501,7 @@ while getopts ":tsTSih" opt; do
 	echo -e "\e[1m"
 	echo -e ""
 	echo "TMUX multiplexer option has been triggered." >&2
-	echo "Starting script..."
+	echo "در حال اجرای اسکریپت..."
 	sleep 1.5
 	echo -e "\e[0m"
 	tmux_mode
@@ -511,7 +511,7 @@ while getopts ":tsTSih" opt; do
 	echo -e "\e[1m"
 	echo -e ""
 	echo "SCREEN multiplexer option has been triggered." >&2
-	echo "Starting script..."
+	echo "در حال اجرای اسکریپت..."
 	sleep 1.5
 	echo -e "\e[0m"
 	screen_mode
@@ -521,7 +521,7 @@ while getopts ":tsTSih" opt; do
 	echo -e "\e[1m"
 	echo -e ""
 	echo "TMUX multiplexer option has been triggered." >&2
-	echo "Starting script..."
+	echo "در حال اجرای اسکریپت..."
 	sleep 1.5
 	echo -e "\e[0m"
 	tmux_detached
@@ -531,7 +531,7 @@ while getopts ":tsTSih" opt; do
 	echo -e "\e[1m"
 	echo -e ""
 	echo "SCREEN multiplexer option has been triggered." >&2
-	echo "Starting script..."
+	echo "در حال اجرای اسکریپت..."
 	sleep 1.5
 	echo -e "\e[0m"
 	screen_detached
@@ -544,11 +544,11 @@ while getopts ":tsTSih" opt; do
 	echo ""
 	echo -e "\e[0m"
 
-echo -e "\033[38;5;208m @alireza_PT    :)      @Create_antispam_bot \033[0;00m"
-echo -e "\033[38;5;208m @alireza_PT    :)      @Create_antispam_bot \033[0;00m"
-echo -e "\033[38;5;208m @alireza_PT    :)      @Create_antispam_bot \033[0;00m"
-echo -e "\033[38;5;208m @alireza_PT    :)      @Create_antispam_bot \033[0;00m"
-echo -e "\033[38;5;208m @alireza_PT    :)      @Create_antispam_bot \033[0;00m"
+echo -e "\033[38;5;208m @MobinDev    :)      @MobinDev \033[0;00m"
+echo -e "\033[38;5;208m @MobinDev    :)      @MobinDev \033[0;00m"
+echo -e "\033[38;5;208m @MobinDev    :)      @MobinDev \033[0;00m"
+echo -e "\033[38;5;208m @MobinDev    :)      @MobinDev \033[0;00m"
+echo -e "\033[38;5;208m @MobinDev    :)      @MobinDev \033[0;00m"
 echo ""
 	exit 1
       ;;
