@@ -13,11 +13,11 @@ local function run(msg, matches)
     if is_momod(msg) and matches[1] == 'lock' then
                     local hash = 'muter:'..msg.to.id
                     redis:set(hash, true)
-                    return "reply has been locked"
+                    return "🔐 ریپلای قفل شد"
   elseif is_momod(msg) and matches[1] == 'unlock' then
                     local hash = 'muter:'..msg.to.id
                     redis:del(hash)
-                    return "reply has been unlocked"
+                    return "🔓 قفل ریپلای باز شد"
 end
 end
 return {
