@@ -13,11 +13,11 @@ local function run(msg, matches)
     if is_momod(msg) and matches[1] == 'lock' then
                     local hash = 'mutef:'..msg.to.id
                     redis:set(hash, true)
-                    return "forward has been locked"
+                    return "🔐 قفل فروارد فعال شد"
   elseif is_momod(msg) and matches[1] == 'unlock' then
                     local hash = 'mutef:'..msg.to.id
                     redis:del(hash)
-                    return "forward has been unlocked"
+                    return "🔓 قفل فروارد باز شد"
 end
 end
 return {
