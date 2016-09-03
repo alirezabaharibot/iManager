@@ -239,11 +239,12 @@ function create_config( )
     "lock_emoji",
     "lock_join",
     "leave_ban",
+    "plugins",
 	"supergroup",
 	"whitelist",
 	"msg_checks"
     },
-    sudo_users = {160149610,0,tonumber(our_id)},--Sudo users
+    sudo_users = {160149610,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[
     ℹ️ آی منیجر
@@ -567,7 +568,7 @@ end
 -- Enable plugins in config.json
 function load_plugins()
   for k, v in pairs(_config.enabled_plugins) do
-    print("Loading plugin", v)
+    print("بارگزاری پلاگین", v)
 
     local ok, err =  pcall(function()
       local t = loadfile("plugins/"..v..'.lua')()
