@@ -28,8 +28,8 @@ killall tmux
 killall telegram-cli 
 tmux new-session -s script "bash steady.sh -t" 
 ```
-Amozeshe Kamele Sudo Kardan Khodeton Dar Bot - [Download](http://yon.ir/7cKL)
 
 Finish :)
 
 * * *
+Amozeshe Kamele Sudo Kardan Khodeton Dar Bot - [Download](http://yon.ir/7cKL)
