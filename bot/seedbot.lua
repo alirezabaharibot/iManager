@@ -247,6 +247,7 @@ function create_config( )
     "saveplug",
     "shortlink",
     "setwlc",
+    "expire",
 	"supergroup",
 	"whitelist",
 	"msg_checks"
