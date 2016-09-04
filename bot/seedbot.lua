@@ -239,18 +239,13 @@ function create_config( )
     "lock_emoji",
     "lock_join",
     "leave_ban",
-    "plugins",
     "echo",
     "tex",
     "salam",
-    "fohsh",
     "getplug",
-    "share",
-    "feedback",
     "qr",
-    "google",
+    "saveplug",
     "shortlink",
-    "dellall",
 	"supergroup",
 	"whitelist",
 	"msg_checks"
@@ -377,20 +372,11 @@ Github.com/MobinDehghani/iManager
 🗣 تکرار متن شما :
 !echo [متن]
 
-📱شماره روبات :
-!share
-
 🖍 زیبا نویسی متن :
 !tex [متن]
 
-🔍 جستجو در گوگل :
-!google [متن]
-
 📎 کوتاه کردن لینک :
 !shortlink [لینک]
-
-🚏 ارسال پیام به پشتیبانی :
-!feedback [متن]
 
 🔲 ساخت کیو آر کد :
 !qr [متن]
