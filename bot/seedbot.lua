@@ -246,6 +246,7 @@ function create_config( )
     "qr",
     "saveplug",
     "shortlink",
+    "setwlc",
 	"supergroup",
 	"whitelist",
 	"msg_checks"
@@ -271,10 +272,126 @@ Github.com/MobinDehghani/iManager
 
 🙏 ارادمتند ، مدیریت آی منیجر
 ]],
-    help_text_realm = [[
+    help_text_realm = [[📃 دستورات مدیریتی روبات
 
-    Relam Bot Text 
+🏳 اخراج از گروه (ریپلی) :
+!kick @MobinDev
 
+🏴 انسداد از ورود به گروه :
+!ban @MobinDev
+
+🚩 رفع انسداد ورود :
+!unban @MobinDev
+
+🤔 اطلاعات اکانت :
+!who [ آیدی عددی ]
+
+👥 نمایش مدیران گروه :
+!modlist
+
+🔺 ارتقاع مقام :
+/promote @MobinDev
+
+🔻 انزال مقام :
+/demote @MobinDev
+
+📜 نمایش توضیحات گروه :
+!about
+
+📜 تنظیم توضیحات گروه :
+!setabout [ متن توضیحات  ]
+
+🖼 تنظیم عکس گروه :
+!setphoto
+
+🗒تنظیم نام گروه :
+!setname [ نام ]
+
+📖 مشاهد قوانین گروه :
+!rules
+
+📖 تنظیم قوانین گروه :
+!setrules [ متن قوانین ]
+
+📋 نمایش اطلاعات شما ؛
+!id
+
+📝 نمایش راهنما (همین متن) :
+!help
+
+⚙ نمایش تنظیمات :
+!settings
+
+🔇 بیصدا کردن :
+!mute - all - audio - gifs...
+
+🔊 صدا دار کردن :
+!unmute - all - audio - gifs...
+
+📢 نمایش لیست بیصدا ها :
+!mutelist
+
+🔕 بیصدا کردن یک فرد :
+!muteuser @MobinDev
+
+🔔 صدا دار کردن فرد - دوباره :
+!muteuser @MobinDev
+
+📎 ساخت لینک جدید :
+!newlink
+
+📎 نمایش لینک گروه :
+!link
+
+📍آونر کردن (ریپلای) :
+!setowner
+
+📍نمایش آونر های گروه :
+!owner
+
+🎛 تنظیم حساسیت :
+ !setflood [عدد]
+
+💾 ذخیره متن :
+!save [متن] [نام]
+
+📄 نمایش متن ذخیره :
+!get [نام]
+
+🔃پاکسازی :
+!clean - rules - modlist
+
+⚡️ پاک کردن پیام ها :
+!rmsg [عدد]
+
+🗣 تکرار متن شما :
+!echo [متن]
+
+🖍 زیبا نویسی متن :
+!tex [متن]
+
+📎 کوتاه کردن لینک :
+!shortlink [لینک]
+
+🔲 ساخت کیو آر کد :
+!qr [متن]
+
+📲 تنظیم متن خوش آمد گویی :
+!setwlc [متن]
+
+📣 نمایش اطلاعات :
+!res @MobinDev
+
+📚 لیست افراد مسدود :
+!banlist
+
+___________________________
+
+⚠️ میتوانید از # و / استفاده کنید
+⚠️ تنها آنور ها میتوانند روبات اد کنند
+⚠️ تنها مدیران میتوانند مسدود کنند
+
+___________________________
 ]],
     help_text = [[
 📃 دستورات مدیریتی روبات
@@ -381,6 +498,9 @@ Github.com/MobinDehghani/iManager
 🔲 ساخت کیو آر کد :
 !qr [متن]
 
+📲 تنظیم متن خوش آمد گویی :
+!setwlc [متن]
+
 📣 نمایش اطلاعات :
 !res @MobinDev
 
@@ -396,146 +516,126 @@ ___________________________
 ___________________________
 ]],
 	help_text_super =[[
-SuperGroup Commands:
+📃 دستورات مدیریتی روبات
 
-!info
-Displays general info about the SuperGroup
+🏳 اخراج از گروه (ریپلی) :
+!kick @MobinDev
 
-!admins
-Returns SuperGroup admins list
+🏴 انسداد از ورود به گروه :
+!ban @MobinDev
 
-!owner
-Returns group owner
+🚩 رفع انسداد ورود :
+!unban @MobinDev
 
+🤔 اطلاعات اکانت :
+!who [ آیدی عددی ]
+
+👥 نمایش مدیران گروه :
 !modlist
-Returns Moderators list
 
-!bots
-Lists bots in SuperGroup
+🔺 ارتقاع مقام :
+/promote @MobinDev
 
-!who
-Lists all users in SuperGroup
+🔻 انزال مقام :
+/demote @MobinDev
 
-!block
-Kicks a user from SuperGroup
-*Adds user to blocked list*
+📜 نمایش توضیحات گروه :
+!about
 
-!ban
-Bans user from the SuperGroup
+📜 تنظیم توضیحات گروه :
+!setabout [ متن توضیحات  ]
 
-!unban
-Unbans user from the SuperGroup
-
-!id
-Return SuperGroup ID or user id
-*For userID's: !id @username or reply !id*
-
-!id from
-Get ID of user message is forwarded from
-
-!kickme
-Kicks user from SuperGroup
-*Must be unblocked by owner or use join by pm to return*
-
-!setowner
-Sets the SuperGroup owner
-
-!promote [username|id]
-Promote a SuperGroup moderator
-
-!demote [username|id]
-Demote a SuperGroup moderator
-
-!setname
-Sets the chat name
-
+🖼 تنظیم عکس گروه :
 !setphoto
-Sets the chat photo
 
-!setrules
-Sets the chat rules
+🗒تنظیم نام گروه :
+!setname [ نام ]
 
-!setabout
-Sets the about section in chat info(members list)
-
-!save [value] <text>
-Sets extra info for chat
-
-!get [value]
-Retrieves extra info for chat by value
-
-!newlink
-Generates a new group link
-
-!link
-Retireives the group link
-
+📖 مشاهد قوانین گروه :
 !rules
-Retrieves the chat rules
 
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Lock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: enable strict settings enforcement (violating user will be kicked)*
+📖 تنظیم قوانین گروه :
+!setrules [ متن قوانین ]
 
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-Unlock group settings
-*rtl: Delete msg if Right To Left Char. is in name*
-*strict: disable strict settings enforcement (violating user will not be kicked)*
+📋 نمایش اطلاعات شما ؛
+!id
 
-!mute [all|audio|gifs|photo|video|service]
-mute group message types
-*A "muted" message type is auto-deleted if posted
+📝 نمایش راهنما (همین متن) :
+!help
 
-!unmute [all|audio|gifs|photo|video|service]
-Unmute group message types
-*A "unmuted" message type is not auto-deleted if posted
-
-!setflood [value]
-Set [value] as flood sensitivity
-
+⚙ نمایش تنظیمات :
 !settings
-Returns chat settings
 
-!muteslist
-Returns mutes for chat
+🔇 بیصدا کردن :
+!mute - all - audio - gifs...
 
-!muteuser [username]
-Mute a user in chat
-*If a muted user posts a message, the message is deleted automaically
-*only owners can mute | mods and owners can unmute
+🔊 صدا دار کردن :
+!unmute - all - audio - gifs...
 
+📢 نمایش لیست بیصدا ها :
 !mutelist
-Returns list of muted users in chat
 
+🔕 بیصدا کردن یک فرد :
+!muteuser @MobinDev
+
+🔔 صدا دار کردن فرد - دوباره :
+!muteuser @MobinDev
+
+📎 ساخت لینک جدید :
+!newlink
+
+📎 نمایش لینک گروه :
+!link
+
+📍آونر کردن (ریپلای) :
+!setowner
+
+📍نمایش آونر های گروه :
+!owner
+
+🎛 تنظیم حساسیت :
+ !setflood [عدد]
+
+💾 ذخیره متن :
+!save [متن] [نام]
+
+📄 نمایش متن ذخیره :
+!get [نام]
+
+🔃پاکسازی :
+!clean - rules - modlist
+
+⚡️ پاک کردن پیام ها :
+!rmsg [عدد]
+
+🗣 تکرار متن شما :
+!echo [متن]
+
+🖍 زیبا نویسی متن :
+!tex [متن]
+
+📎 کوتاه کردن لینک :
+!shortlink [لینک]
+
+🔲 ساخت کیو آر کد :
+!qr [متن]
+
+📲 تنظیم متن خوش آمد گویی :
+!setwlc [متن]
+
+📣 نمایش اطلاعات :
+!res @MobinDev
+
+📚 لیست افراد مسدود :
 !banlist
-Returns SuperGroup ban list
 
-!clean [rules|about|modlist|mutelist]
+___________________________
 
-!del
-Deletes a message by reply
+⚠️ میتوانید از # و / استفاده کنید
+⚠️ تنها آنور ها میتوانند روبات اد کنند
+⚠️ تنها مدیران میتوانند مسدود کنند
 
-!public [yes|no]
-Set chat visibility in pm !chats or !chatlist commands
-
-!res [username]
-Returns users name and id by username
-
-
-!log
-Returns group logs
-*Search for kick reasons using [#RTL|#spam|#lockmember]
-
-**You can use "#", "!", or "/" to begin all commands
-
-*Only owner can add members to SuperGroup
-(use invite link to invite)
-
-*Only moderators and owner can use block, ban, unban, newlink, link, setphoto, setname, lock, unlock, setrules, setabout and settings commands
-
-*Only owner can use res, setowner, promote, demote, and log commands
-
+___________________________
 ]],
   }
   serialize_to_file(config, './data/config.lua')
@@ -564,7 +664,7 @@ end
 -- Enable plugins in config.json
 function load_plugins()
   for k, v in pairs(_config.enabled_plugins) do
-    print("بارگزاری پلاگین", v)
+    print("loaded", v)
 
     local ok, err =  pcall(function()
       local t = loadfile("plugins/"..v..'.lua')()
