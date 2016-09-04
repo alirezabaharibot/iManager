@@ -103,8 +103,8 @@ sleep 3
 
 while true; do
   
-	echo -e "$f2 TIMES CHECKED AND RUNNING:$f5 $OK $rst"
-	echo -e "$f2 TIMES FAILED AND RECOVERED:$f5 $BAD $rst"
+	echo -e "$f2 دفعاتی که روبات ران شده :$f5 $OK $rst"
+	echo -e "$f2 تعداد دفعات شکست خوردن ران :$f5 $BAD $rst"
 	echo ""
 	
 	cat /proc/$CLIPID/task/$CLIPID/status > CHECK
