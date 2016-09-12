@@ -4,9 +4,9 @@ local function run(msg, matches)
   jstr, res = https.request(url)
   jdat = JSON.decode(jstr)
   if jdat.message then
-    return 'لینک کوتاه شد ✔️ \n_____________\n'..jdat.message
+    return '☑️ لینک شما با موفقیت کوتاه شد \n   --------- \n'..jdat.message
   else
-    return "لینک کوتا شد ✔️ \n_____________\n"..jdat.data.url
+    return "☑️ لینک شما با موفقیت کوتاه شد \n   --------- \n"..jdat.data.url
     end
   end
 
