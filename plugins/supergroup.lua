@@ -978,7 +978,7 @@ function show_supergroup_settingsmod(msg, target)
   	mute_fwd = 'no'
   end
   local settings = data[tostring(target)]['settings']
-  local text = ""
+  local text = "⚙ SuperGroup Settings\n\n🤖 lock Bots : "..bots_protection.."\n🗣 lock Fosh : "..settings.fosh.."\n📡 lock Operator : "..settings.operator.."\n🕹 lock Leave : "..settings.leave.."\n👥 lock Join : "..settings.join.."\n🎬 lock Media : "..settings.media.."\n🆔 lock UserName : "..settings.username.."\n😄 lock Emoji : "..settings.emoji.."\n🃏 lock Sticker : "..settings.lock_sticker.."\n#⃣ lock Hashtak : "..settings.tag.."\n🚸 TgService : "..settings.lock_tgservice.."\n📟 lock RTL : "..settings.lock_rtl.."\n📝 lock Arabic : "..settings.lock_arabic.."\n📄 lock English : "..settings.english.."\n🔙 lock Forward : "..mute_fwd.."\n☢ lock Flood : "..settings.flood.."\n📎 lock links :  "..settings.lock_link.."\n🔖 lock Contact :  "..settings.lock_contacts.."\n🔰 lock Spam : "..settings.lock_spam.."\n🔃 lock Reply : "..mute_reply.."\n📚 lock All : "..settings.all.."\n \n 📢 @AboutBots \n👤 @MobinDev \n👤 @NullUser"
   local text = string.gsub(text,'yes','✔️')
   local text = string.gsub(text,'no','✖️')
 return text
