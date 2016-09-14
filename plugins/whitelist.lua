@@ -16,10 +16,10 @@ local function get_message_callback (extra , success, result)
 	local is_whitelisted = redis:sismember(hash, user_id)      
 	if is_whitelisted then
 		redis:srem(hash, user_id)
-		send_large_msg(receiver, "User/Bot ["..user_id.."] removed from whitelist")
+		send_large_msg(receiver, "👤 کاربر / روبات ["..user_id.."] از لیست سفید حذف شد")
 	else
 		redis:sadd(hash, user_id)
-		send_large_msg(receiver, "User/Bot ["..user_id.."] added to whitelist")
+		send_large_msg(receiver, "👤 کاربر / روبات ["..user_id.."] به لیست سفید افزوده شد")
 	end
 	
 end
@@ -31,10 +31,10 @@ local function whitelist_res (extra, success, result)
 	local is_whitelisted = redis:sismember(hash, user_id)      
 	if is_whitelisted then
 		redis:srem(hash, user_id)
-		send_large_msg(receiver, "User/Bot ["..user_id.."] removed from whitelist")
+		send_large_msg(receiver, "👤 کاربر / روبات ["..user_id.."] از لیست سفید حذف شد")
 	else
 		redis:sadd(hash, user_id)
-		send_large_msg(receiver, "User/Bot ["..user_id.."] added to whitelist")
+		send_large_msg(receiver, "👤 کاربر / روبات ["..user_id.."] به لیست سفید افزوده شد")
 	end
 end
 
@@ -50,10 +50,10 @@ if matches[1] == "whitelist" and is_admin1(msg) then
 		local is_whitelisted = redis:sismember(hash, user_id)      
 		if is_whitelisted then
 			redis:srem(hash, user_id)
-			return "User/Bot ["..user_id.."] removed from whitelist"
+			return "👤 کاربر / روبات ["..user_id.."] از لیست سفید حذف شد"
 		else
 			redis:sadd(hash, user_id)
-			return "User/Bot ["..user_id.."] added to whitelist"
+			return "👤 کاربر / روبات ["..user_id.."] به لیست سفید افزوده شد"
 		end
 	elseif not string.match(matches[2], '^%d+$') then
 		local receiver = get_receiver(msg)
@@ -66,7 +66,8 @@ end
 	if matches[1] == "clean" and matches[2] == 'whitelist' and is_admin1(msg) then
 		local hash =  'whitelist'
 			redis:del(hash)
-		return "Whitelist Cleaned"
+		return "📄 لیست سفید پاک شد
+		"
 	end
 end
 
