@@ -250,6 +250,7 @@ function create_config( )
     "setwlc",
     "setbye",
     "expire",
+    "plugins",
 	"supergroup",
 	"whitelist",
 	"msg_checks"
