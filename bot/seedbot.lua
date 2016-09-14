@@ -244,9 +244,11 @@ function create_config( )
     "salam",
     "getplug",
     "qr",
+    "me",
     "saveplug",
     "shortlink",
     "setwlc",
+    "setbye",
     "expire",
 	"supergroup",
 	"whitelist",
@@ -257,7 +259,7 @@ function create_config( )
     about_text = [[
     ℹ️ آی منیجر
 
-Github.com/MobinDehghani/iManager
+Github.com/MobinDehghani
 
 1⃣ اوپن سورس
 2⃣ کاملا فارسی و مفهوم
@@ -291,10 +293,10 @@ Github.com/MobinDehghani/iManager
 !modlist
 
 🔺 ارتقاع مقام :
-/promote @MobinDev
+!promote @MobinDev
 
 🔻 انزال مقام :
-/demote @MobinDev
+!demote @MobinDev
 
 📜 نمایش توضیحات گروه :
 !about
@@ -413,10 +415,10 @@ ___________________________
 !modlist
 
 🔺 ارتقاع مقام :
-/promote @MobinDev
+!promote @MobinDev
 
 🔻 انزال مقام :
-/demote @MobinDev
+!demote @MobinDev
 
 📜 نمایش توضیحات گروه :
 !about
@@ -535,10 +537,10 @@ ___________________________
 !modlist
 
 🔺 ارتقاع مقام :
-/promote @MobinDev
+!promote @MobinDev
 
 🔻 انزال مقام :
-/demote @MobinDev
+!demote @MobinDev
 
 📜 نمایش توضیحات گروه :
 !about
