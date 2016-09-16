@@ -66,7 +66,7 @@ end
 	if matches[1] == "clean" and matches[2] == 'whitelist' and is_admin1(msg) then
 		local hash =  'whitelist'
 			redis:del(hash)
-		return "📄 لیست سفید پاک شد
+		return "📄 لیست سفید پاک شد"
 		"
 	end
 end
