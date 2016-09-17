@@ -1,4 +1,5 @@
-
+--by @blackwolf_admin
+-- channel : @open_sources
 local function pre_process(msg)
   local data = load_data(_config.moderation.data)
   -- SERVICE MESSAGE
@@ -66,10 +67,10 @@ local function pre_process(msg)
   if msg.to.type == 'chat' or msg.to.type == 'channel' then
     local group = msg.to.id
     local texttext = 'groups'
-    --if not data[tostring(texttext)][tostring(msg.to.id)] and not is_realm(msg) then -- Check if this group is one of my groups or not
-    --chat_del_user('chat#id'..msg.to.id,'user#id'..our_id,ok_cb,false)
-    --return
-    --end
+    if not data[tostring(texttext)][tostring(msg.to.id)] and not is_realm(msg) then -- Check if this group is one of my groups or not
+    chat_del_user('chat#id'..msg.to.id,'user#id'..our_id,ok_cb,false)
+    return "talk to @blackwolf_admin for get groups!"
+    end
     local user_id = msg.from.id
     local chat_id = msg.to.id
     local banned = is_banned(user_id, chat_id)
@@ -118,6 +119,10 @@ local function kick_ban_res(extra, success, result)
         end
         send_large_msg(receiver, 'User @'..member..' ['..member_id..'] banned')
 		ban_user(member_id, chat_id)
+local bannedhash = 'banned:'..msg.from.id..':'..msg.to.id
+        redis:incr(bannedhash)
+        local bannedhash = 'banned:'..msg.from.id..':'..msg.to.id
+        local banned = redis:get(bannedhash)
       elseif get_cmd == 'unban' then
         send_large_msg(receiver, 'User @'..member..' ['..member_id..'] unbanned')
         local hash =  'banned:'..chat_id
@@ -136,7 +141,7 @@ local function run(msg, matches)
 local support_id = msg.from.id
  if matches[1]:lower() == 'id' and msg.to.type == "chat" or msg.to.type == "user" then
     if msg.to.type == "user" then
-      return "🤖 آیدی روبات :"..msg.to.id.. "\n\n👤 آیدی شما :"..msg.from.id
+      return "Bot ID: "..msg.to.id.. "\n\nYour ID: "..msg.from.id
     end
     if type(msg.reply_id) ~= "nil" then
       local print_name = user_print_name(msg.from):gsub("‮", "")
@@ -170,6 +175,24 @@ local support_id = msg.from.id
     end
     return ban_list(chat_id)
   end
+if matches[1]:lower() == "clean" and matches[2]:lower() == "banlist" then
+ if not is_owner(msg) then
+return nil
+end
+local chat_id = msg.to.id
+local hash = 'banned:'..chat_id
+send_large_msg(get_receiver(msg), "banlist has been cleaned")
+redis:del(hash)
+end
+if matches[1]:lower() == "clean" and matches[2]:lower() == "gbanlist" then
+ if not is_sudo(msg) then
+return nil
+end
+local chat_id = msg.to.id
+local hash = 'gbanned'
+send_large_msg(get_receiver(msg), "globall banlist  has been cleaned")
+redis:del(hash)
+end
   if matches[1]:lower() == 'ban' then-- /ban
     if type(msg.reply_id)~="nil" and is_momod(msg) then
       if is_admin1(msg) then
@@ -192,9 +215,17 @@ local support_id = msg.from.id
         local print_name = user_print_name(msg.from):gsub("‮", "")
 	    local name = print_name:gsub("_", "")
 		local receiver = get_receiver(msg)
-        savelog(msg.to.id, name.." ["..msg.from.id.."] baned user ".. matches[2])
+        --savelog(msg.to.id, name.." ["..msg.from.id.."] baned user ".. matches[2])
         ban_user(matches[2], msg.to.id)
-		send_large_msg(receiver, 'User ['..matches[2]..'] banned')
+local bannedhash = 'banned:'..msg.from.id..':'..msg.to.id
+        redis:incr(bannedhash)
+        local bannedhash = 'banned:'..msg.from.id..':'..msg.to.id
+        local banned = redis:get(bannedhash)
+	send_large_msg(receiver, 'User ['..matches[2]..'] banned')
+local bannedhash = 'banned:'..msg.from.id..':'..msg.to.id
+        redis:incr(bannedhash)
+        local bannedhash = 'banned:'..msg.from.id..':'..msg.to.id
+        local banned = redis:get(bannedhash)
       else
 		local cbres_extra = {
 		chat_id = msg.to.id,
@@ -330,6 +361,8 @@ return {
     "^[#!/]([Bb]anall)$",
     "^[#!/]([Bb]anlist) (.*)$",
     "^[#!/]([Bb]anlist)$",
+    "^[#/!]([Cc]lean) ([Bb]anlist)$",
+"^[#/!]([Cc]lean) ([Gg]banlist)$",
     "^[#!/]([Gg]banlist)$",
 	"^[#!/]([Kk]ickme)",
     "^[#!/]([Kk]ick)$",
@@ -346,3 +379,5 @@ return {
   run = run,
   pre_process = pre_process
 }
+
+-- By @MobinDev
