@@ -24,8 +24,12 @@ return {
   },
   patterns = {
     "^[!/#]tex (.+)$"
+    "^[!/#]text (.+)$"
+    "^بنویس (.+)$"
   },
   run = run
 }
 
 end
+
+-- By @MobinDev
