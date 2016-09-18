@@ -16,7 +16,7 @@ function tmux_mode {
 
 sleep 0.5
 clear
-# Space invaders thanks to github.com/windelicato
+# Space invaders thanks to github.com/MobinDehghani
 f=3 b=4
 for j in f b; do
   for i in {0..7}; do
@@ -79,7 +79,7 @@ sleep 0.9
 # =====Setup ends===== #
 
 # Opening new tmux in a daemon
-echo -e "$bld$f4 ATTACHING TMUX AS DAEMON...$rst"
+echo -e "$bld$f4 درحال بارگزاری اتولانچ...$rst"
 # It is recommended to clear cli status always before starting the bot
 rm ../.telegram-cli/state  > /dev/null 
 # Nested TMUX sessions trick 
@@ -168,7 +168,7 @@ function screen_mode {
 clear
 sleep 0.5
 
-# Space invaders thanks to github.com/windelicato
+# Space invaders thanks to github.com/MobinDehghani
 f=3 b=4
 for j in f b; do
   for i in {0..7}; do
@@ -459,7 +459,7 @@ while getopts ":tsTSih" opt; do
     T)
 	echo -e "\e[1m"
 	echo -e ""
-	echo "TMUX multiplexer option has been triggered." >&2
+	echo "دستور تی ماکس اجرا شده" >&2
 	echo "در حال اجرای اسکریپت..."
 	sleep 1.5
 	echo -e "\e[0m"
@@ -479,7 +479,7 @@ while getopts ":tsTSih" opt; do
 	i)
 	echo -e "\e[1m"
 	echo -e ""
-	echo "steady.sh bash script v1 CRUEL 2016 GPMOD" >&2
+	echo "Steady File By @MobinDev" >&2
 	echo ""
 	echo -e "\e[0m"
 
