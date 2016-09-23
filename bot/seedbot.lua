@@ -244,7 +244,6 @@ function create_config( )
     "salam",
     "getplug",
     "qr",
-    "me",
     "saveplug",
     "shortlink",
     "setwlc",
