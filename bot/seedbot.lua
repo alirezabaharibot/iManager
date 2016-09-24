@@ -227,6 +227,7 @@ function create_config( )
     "broadcast",
     "invite",
     "all",
+    "fosh",
     "rmsg",
     "lock_fosh",
     "lock_username",
